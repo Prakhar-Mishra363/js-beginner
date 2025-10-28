@@ -20,10 +20,31 @@
 //-----------------------------------------
 //coversion to string
 
-let someText = NaN
-let stringSomeText = String(someText)
-console.log(stringSomeText);
-console.log(typeof stringSomeText);// string
+// let someText = NaN
+// let stringSomeText = String(someText)
+// console.log(stringSomeText);
+// console.log(typeof stringSomeText);// string
 
 //null converts to string but value is null and the same goes for the undefined and NaN
-//
+
+
+//------------------------------------
+//Some tricky conversions
+
+let str1 = '2'
+let str2 = '3'
+
+let combinedStr = str1 + str2
+console.log(combinedStr);
+
+console.log(1 + '2'); //12
+console.log('1' + 2);  //12
+console.log('1' + 2 + 2); //122
+console.log(1 + 2 + '2');  // 32
+
+
+
+
+
+
+
